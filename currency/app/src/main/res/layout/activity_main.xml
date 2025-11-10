@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#ECECEC">
+
+    <TextView
+        android:id="@+id/currency_input"
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="60sp"
+        android:padding="20dp"
+        android:gravity="center_vertical"
+
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="end|center_vertical"
+
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintWidth_percent="1"
+        app:layout_constraintTop_toBottomOf="@+id/currency_input"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/currency_label"
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="60sp"
+        android:padding="20dp"
+        android:gravity="center_vertical"
+
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintTop_toBottomOf="@id/spinner1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="end|center_vertical"
+
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintWidth_percent="1"
+        app:layout_constraintTop_toBottomOf="@+id/currency_label"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:columnCount="3"
+        android:rowCount="5"
+        app:layout_constraintTop_toBottomOf="@id/spinner2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:layout_width="0dp"
+
+            android:layout_height="0dp"
+
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:backgroundTint="#E0E0E0"
+
+            android:text=" "
+            android:textColor="@color/black"
+
+            tools:ignore="HardcodedText,SpeakableTextPresentCheck,VisualLintButtonSize" />
+
+        <Button
+            android:text="CE"
+
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+
+            android:backgroundTint="#E0E0E0"
+            android:textColor="@color/black"
+
+            tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+        <Button
+            android:text="C"
+
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+
+            android:backgroundTint="#E0E0E0"
+            android:textColor="@color/black"
+
+            tools:ignore="HardcodedText,VisualLintButtonSize"/>
+
+        <Button
+            android:text="7"
+
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+
+            android:backgroundTint="#E0E0E0"
+            android:textColor="@color/black"
+
+            tools:ignore="HardcodedText,VisualLintButtonSize"/>
+
+        <Button
+            android:text="8"
+
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+
+            android:backgroundTint="#E0E0E0"
+            android:textColor="@color/black"
+
+            tools:ignore="HardcodedText,VisualLintButtonSize"/>
+
+        <Button
+            android:text="9"
+
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+
+            android:backgroundTint="#E0E0E0"
+            android:textColor="@color/black"
+
+            tools:ignore="HardcodedText,VisualLintButtonSize"/>
+
+        <Button
+            android:text="4"
+
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+
+            android:backgroundTint="#E0E0E0"
+            android:textColor="@color/black"
+
+            tools:ignore="HardcodedText,VisualLintButtonSize"/>
+
+        <Button
+            android:text="5"
+
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+
+            android:backgroundTint="#E0E0E0"
+            android:textColor="@color/black"
+
+            tools:ignore="HardcodedText,VisualLintButtonSize"/>
+
+        <Button
+            android:text="6"
+
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+
+            android:backgroundTint="#E0E0E0"
+            android:textColor="@color/black"
+
+            tools:ignore="HardcodedText,VisualLintButtonSize"/>
+
+        <Button
+            android:text="1"
+
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+
+            android:backgroundTint="#E0E0E0"
+            android:textColor="@color/black"
+
+            tools:ignore="HardcodedText,VisualLintButtonSize"/>
+
+        <Button
+            android:text="2"
+
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+
+            android:backgroundTint="#E0E0E0"
+            android:textColor="@color/black"
+
+            tools:ignore="HardcodedText,VisualLintButtonSize"/>
+
+        <Button
+            android:text="3"
+
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+
+            android:backgroundTint="#E0E0E0"
+            android:textColor="@color/black"
+
+            tools:ignore="HardcodedText,VisualLintButtonSize"/>
+
+        <Button
+            android:layout_width="0dp"
+
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:backgroundTint="#E0E0E0"
+
+            android:text=" "
+            android:textColor="@color/black"
+
+            tools:ignore="HardcodedText,SpeakableTextPresentCheck,VisualLintButtonSize" />
+
+        <Button
+            android:layout_width="0dp"
+
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:backgroundTint="#E0E0E0"
+
+            android:text="0"
+            android:textColor="@color/black"
+
+            tools:ignore="HardcodedText,DuplicateSpeakableTextCheck,VisualLintButtonSize" />
+
+        <Button
+            android:text="."
+
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+
+            android:backgroundTint="#E0E0E0"
+            android:textColor="@color/black"
+
+            tools:ignore="HardcodedText,VisualLintButtonSize"/>
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
